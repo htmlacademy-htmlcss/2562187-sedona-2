@@ -1,53 +1,197 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Каталог</title>
-    <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <header class="header">
-        <a href="https://htmlacademy.ru/" class="header-logo">
+      <a href="https://htmlacademy.ru/" class="header-logo">
+        <img
+          src="images/logo.svg"
+          alt="Логотип Седоны"
+          class="header-logo-image"
+        />
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <a href="index.html" class="navigation-list-item-link">Главная</a>
+          </li>
+          <li class="navigation-list-item">
+            <a href="#" class="navigation-list-item-link">О седоне</a>
+          </li>
+          <li class="navigation-list-item">
+            <a href="#" class="navigation-list-item-link active">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-buttons">
+        <a href="#" class="header-search">
           <img
-            src="images/logo.svg"
-            alt="Логотип Седоны"
-            class="header-logo-image"
+            src="images/search.svg"
+            alt="Поиск"
+            class="header-search-image"
           />
         </a>
-        <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-list-item">
-              <a href="#" class="navigation-list-item-link">Главная</a>
-            </li>
-            <li class="navigation-list-item">
-              <a href="#" class="navigation-list-item-link">О седоне</a>
-            </li>
-            <li class="navigation-list-item">
-              <a href="#" class="navigation-list-item-link active">Гостиницы</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-buttons">
-          <a href="#" class="header-search">
-            <img
-              src="images/search.svg"
-              alt="Поиск"
-              class="header-search-image"
-            />
-          </a>
-          <a href="#" class="header-favorites">
-            <img
-              src="images/fav.svg"
-              alt="Избранное"
-              class="header-favorites-image"
-            />
-          </a>
-          <button class="button">Хочу сюда!</button>
+        <a href="#" class="header-favorites">
+          <img
+            src="images/fav.svg"
+            alt="Избранное"
+            class="header-favorites-image"
+          />
+        </a>
+        <button class="button">Хочу сюда!</button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hotels-filter">
+        <div class="hotels-filter-intro">
+          <h1 class="catalog-title">Гостиницы Седоны</h1>
+          <nav class="page-navigation">
+            <ul class="page-navigation-list">
+              <li class="list-item">
+                <a href="index.html" class="list-item-link main-page">
+                  <img
+                    src="images/main-page-icon.svg"
+                    alt="На главную"
+                    class="main-page-icon"
+                    width="12"
+                    height="12"
+                  />
+                </a>
+              </li>
+              <li class="list-item-divider">
+                <img
+                  src="images/navigation-list-divider.svg"
+                  alt=""
+                  class="divider-image"
+                  width="6"
+                  height="10"
+                />
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-item-link current-page">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </header>
-    <main class="main"></main>
-</body>
+        <form action="#" class="filters">
+          <fieldset class="filter-properties">
+            <legend class="filter-subtitle">Инфраструктура:</legend>
+            <label class="label"
+              ><input
+                class="checkbox"
+                type="checkbox"
+                name="infrastructure"
+                value="pool"
+                checked
+              />
+              Бассейн</label
+            >
+            <label class="label"
+              ><input
+                class="checkbox"
+                type="checkbox"
+                name="infrastructure"
+                value="parking"
+                checked
+              />
+              Парковка</label
+            >
+            <label class="label"
+              ><input
+                class="checkbox"
+                type="checkbox"
+                name="infrastructure"
+                value="wifi"
+              />
+              Wi-Fi</label
+            >
+          </fieldset>
+          <fieldset class="filter-properties">
+            <legend class="filter-subtitle">Тип Жилья:</legend>
+            <label class="label"
+              ><input
+                class="radio"
+                type="radio"
+                name="accommodation"
+                value="hotel"
+                checked
+              />
+              Гостиница</label
+            >
+            <label class="label"
+              ><input
+                class="radio"
+                type="radio"
+                name="accommodation"
+                value="motel"
+              />
+              Мотель</label
+            >
+            <label class="label"
+              ><input
+                class="radio"
+                type="radio"
+                name="accommodation"
+                value="apartment"
+              />
+              Апартаменты</label
+            >
+          </fieldset>
+          <div class="price-filter-properties">
+            <label class="filter-subtitle">Стоимость, ₽:</label>
+            <div class="price-inputs">
+              <input
+                class="price-input input-min-price"
+                type="number"
+                id="min-price"
+                value="0"
+                readonly
+              />
+              <span class="price from">от</span>
+              <input
+                class="price-input input-max-price"
+                type="number"
+                id="max-price"
+                value="9000"
+                readonly
+              />
+              <span class="price to">до</span>
+            </div>
+            <div class="range-slider">
+              <input
+                type="range"
+                min="0"
+                max="4500"
+                value="0"
+                id="slider-left"
+              />
+              <input
+                type="range"
+                min="4501"
+                max="9000"
+                value="8000"
+                id="slider-right"
+              />
+            </div>
+          </div>
+          <div class="filter-buttons">
+            <input
+              type="submit"
+              value="Применить"
+              class="button submit-button"
+            />
+            <input type="reset" value="Сбросить" class="button reset-button" />
+          </div>
+        </form>
+      </section>
+      <section class="hotels-list"></section>
+    </main>
+  </body>
 </html>
