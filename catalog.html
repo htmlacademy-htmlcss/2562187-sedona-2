@@ -48,7 +48,7 @@
         <button class="button">Хочу сюда!</button>
       </div>
     </header>
-    <main class="main">
+    <main class="main-catalog">
       <section class="hotels-filter">
         <div class="hotels-filter-intro">
           <h1 class="catalog-title">Гостиницы Седоны</h1>
@@ -191,7 +191,256 @@
           </div>
         </form>
       </section>
-      <section class="hotels-list"></section>
+      <section class="hotels-results">
+        <div class="hotels-results-intro">
+          <p class="filter-results">Найдено гостиниц: 38</p>
+          <select name="price" id="price" class="price-filter-select">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <div class="display-mode-buttons">
+            <button
+              class="display-button default-mode selected-button"
+            ></button>
+            <button class="display-button wide-mode"></button>
+            <button class="display-button list-mode"></button>
+          </div>
+        </div>
+        <ul class="hotels-list">
+          <li class="hotels-list-item">
+            <article class="hotel-card">
+              <img
+                src="images/amara-resort.jpg"
+                alt="Amara Resort & Spa"
+                class="hotel-image"
+                width="300"
+                height="212"
+              />
+              <div class="hotel-properties">
+                <p class="hotel-name">Amara Resort & Spa</p>
+                <p class="hotel-type">Гостиница</p>
+                <p class="hotel-price">От 4000 ₽</p>
+                <a href="#" class="button hotel-about">подробнее</a>
+                <button class="button favorite">в избранное</button>
+                <div class="stars-count">
+                  <img
+                    src="images/hotel-stars.svg"
+                    alt="Звезда"
+                    class="hotel-stars-image"
+                    width="18"
+                    height="17"
+                  />
+                  <img
+                    src="images/hotel-stars.svg"
+                    alt="Звезда"
+                    class="hotel-stars-image"
+                    width="18"
+                    height="17"
+                  />
+                  <img
+                    src="images/hotel-stars.svg"
+                    alt="Звезда"
+                    class="hotel-stars-image"
+                    width="18"
+                    height="17"
+                  />
+                  <img
+                    src="images/hotel-stars.svg"
+                    alt="Звезда"
+                    class="hotel-stars-image"
+                    width="18"
+                    height="17"
+                  />
+                </div>
+                <p class="button hotel-rating">Рейтинг: 8,5</p>
+              </div>
+            </article>
+          </li>
+          <li class="hotels-list-item">
+            <article class="hotel-card">
+              <img
+                src="images/villas-at-poco-diablo.jpg"
+                alt="Villas at Poco Diablo"
+                class="hotel-image"
+                width="300"
+                height="212"
+              />
+              <div class="hotel-properties">
+                <p class="hotel-name">Villas at Poco Diablo</p>
+                <p class="hotel-type">Гостиница</p>
+                <p class="hotel-price">От 5000 ₽</p>
+                <a href="#" class="button hotel-about">подробнее</a>
+                <button class="button favorited">в избранном</button>
+                <div class="stars-count">
+                  <img
+                    src="images/hotel-stars.svg"
+                    alt="Звезда"
+                    class="hotel-stars-image"
+                    width="18"
+                    height="17"
+                  />
+                  <img
+                    src="images/hotel-stars.svg"
+                    alt="Звезда"
+                    class="hotel-stars-image"
+                    width="18"
+                    height="17"
+                  />
+                  <img
+                    src="images/hotel-stars.svg"
+                    alt="Звезда"
+                    class="hotel-stars-image"
+                    width="18"
+                    height="17"
+                  />
+                  <img
+                    src="images/hotel-stars.svg"
+                    alt="Звезда"
+                    class="hotel-stars-image"
+                    width="18"
+                    height="17"
+                  />
+                </div>
+                <p class="button hotel-rating">Рейтинг: 9,2</p>
+              </div>
+            </article>
+          </li>
+          <li class="hotels-list-item">
+            <article class="hotel-card">
+              <img
+                src="images/desert-quail-inn.jpg"
+                alt="Desert Quail Inn"
+                class="hotel-image"
+                width="300"
+                height="212"
+              />
+              <div class="hotel-properties">
+                <p class="hotel-name">Desert Quail Inn</p>
+                <p class="hotel-type">Гостиница</p>
+                <p class="hotel-price">От 2500 ₽</p>
+                <a href="#" class="button hotel-about">подробнее</a>
+                <button class="button favorite">в избранное</button>
+                <div class="stars-count">
+                  <img
+                    src="images/hotel-stars.svg"
+                    alt="Звезда"
+                    class="hotel-stars-image"
+                    width="18"
+                    height="17"
+                  />
+                  <img
+                    src="images/hotel-stars.svg"
+                    alt="Звезда"
+                    class="hotel-stars-image"
+                    width="18"
+                    height="17"
+                  />
+                  <img
+                    src="images/hotel-stars.svg"
+                    alt="Звезда"
+                    class="hotel-stars-image"
+                    width="18"
+                    height="17"
+                  />
+                </div>
+                <p class="button hotel-rating">Рейтинг: 6,9</p>
+              </div>
+            </article>
+          </li>
+          <li class="hotels-list-item">
+            <article class="hotel-card">
+              <img
+                src="images/greentree-inn.jpg"
+                alt="GreenTree Inn"
+                class="hotel-image"
+                width="300"
+                height="212"
+              />
+              <div class="hotel-properties">
+                <p class="hotel-name">GreenTree Inn</p>
+                <p class="hotel-type">Гостиница</p>
+                <p class="hotel-price">От 1500 ₽</p>
+                <a href="#" class="button hotel-about">подробнее</a>
+                <button class="button favorite">в избранное</button>
+                <div class="stars-count">
+                  <img
+                    src="images/hotel-stars.svg"
+                    alt="Звезда"
+                    class="hotel-stars-image"
+                    width="18"
+                    height="17"
+                  />
+                  <img
+                    src="images/hotel-stars.svg"
+                    alt="Звезда"
+                    class="hotel-stars-image"
+                    width="18"
+                    height="17"
+                  />
+                </div>
+                <p class="button hotel-rating">Рейтинг: 5,0</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="divider"></div>
+        <ul class="page-button-list">
+          <li class="list-item">
+            <button class="button page-button current">1</button>
+          </li>
+          <li class="list-item">
+            <button class="button page-button">2</button>
+          </li>
+          <li class="list-item">
+            <button class="button page-button">3</button>
+          </li>
+          <li class="list-item">
+            <button class="button page-button">4</button>
+          </li>
+          <li class="list-item">
+            <button class="button page-button more">...</button>
+          </li>
+          <li class="list-item">
+            <button class="button page-button">10</button>
+          </li>
+        </ul>
+      </section>
+      <div class="subscription">
+        <p class="section-subtitle">Подпишитесь на рассылку</p>
+        <p class="section-description">
+          Только полезная информация и никакого спама,<br />
+          честное бойскаутское!
+        </p>
+        <form action="#" class="subscription-form">
+          <input type="email" class="input-field" placeholder="Ваш e-mail" />
+          <button class="button">Подписаться</button>
+        </form>
+      </div>
     </main>
+    <footer class="footer">
+      <ul class="socials-list">
+        <li class="socials-list-item">
+          <a href="https://vk.com/htmlacademy" class="socials-link"
+            ><img src="images/vk.svg" alt="ВК" class="socials-icon"
+          /></a>
+        </li>
+        <li class="socials-list-item">
+          <a href="https://t.me/htmlacademy" class="socials-link"
+            ><img src="images/tg.svg" alt="Телеграм" class="socials-icon"
+          /></a>
+        </li>
+        <li class="socials-list-item">
+          <a href="https://www.youtube.com/user/htmlacademyru" class="socials-link"
+            ><img src="images/yt.svg" alt="Ютуб" class="socials-icon"
+          /></a>
+        </li>
+      </ul>
+      <address class="address">
+        <a href="tel:+78128121212" class="address-link">+7 (812) 812-12-12</a>
+      </address>
+      <a href="https://htmlacademy.ru/" class="footer-logo">
+        <img src="images/HTMLAcademy.svg" alt="HTML Academy Логотип" class="footer-logo-image">
+      </a>
+    </footer>
   </body>
 </html>
