@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Павел Раскин](https://up.htmlacademy.ru/htmlcss-individual/2/user/2562187).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Артём Картавый](https://htmlacademy.ru/profile/artem_k).
+* Сайт: [Ссылка на сайт Седона](https://github.com/Directionfl/2562187-sedona-2).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
