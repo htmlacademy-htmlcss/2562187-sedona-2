@@ -113,20 +113,52 @@ body {
   font-weight: 700;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .intro-bg-image {
   position: relative;
   z-index: -1;
 }
 
-.intro-bg-overlay-title {
-  position: absolute;
-  top: 115px;
-  left: 411px;
+.intro-images {
+  position: relative;
+  width: 1200px;
+  height: 485px;
 }
 
-.intro-bg-overlay-divider {
+.intro-images::before {
+  content: "";
   position: absolute;
-  top: 495px;
+  background-image: url(../images/bg-overlay-title.svg);
+  top: -31px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro-images::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/intro-divider.svg);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .about {
@@ -216,11 +248,10 @@ body {
 
 .card-list {
   display: flex;
-  grid-column: 1/4;
 }
 
 .card-list .card {
-  padding: 113px 85px;
+  padding: 116px 85px;
 }
 
 .section-ending-info {
@@ -681,10 +712,11 @@ input[type="range"]::-webkit-slider-runnable-track {
   line-height: 125%;
 }
 
-.divider {
+.hotels-list::after {
+  content: "";
   border: 1px solid #e6e6e6;
   width: 1060px;
-  margin: 40px 0;
+  margin: 23px 0 40px 0;
 }
 
 .page-button-list {
