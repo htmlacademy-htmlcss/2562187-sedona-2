@@ -52,33 +52,31 @@
       <section class="hotels-filter">
         <div class="hotels-filter-intro">
           <h1 class="catalog-title">Гостиницы Седоны</h1>
-          <nav class="page-navigation">
-            <ul class="page-navigation-list">
-              <li class="list-item">
-                <a href="index.html" class="list-item-link main-page">
-                  <img
-                    src="images/main-page-icon.svg"
-                    alt="На главную"
-                    class="main-page-icon"
-                    width="12"
-                    height="12"
-                  />
-                </a>
-              </li>
-              <li class="list-item-divider">
+          <ul class="breadcrumbs-list">
+            <li class="list-item">
+              <a href="index.html" class="list-item-link main-page">
                 <img
-                  src="images/navigation-list-divider.svg"
-                  alt=""
-                  class="divider-image"
-                  width="6"
-                  height="10"
+                  src="images/main-page-icon.svg"
+                  alt="На главную"
+                  class="main-page-icon"
+                  width="12"
+                  height="12"
                 />
-              </li>
-              <li class="list-item">
-                <a href="#" class="list-item-link current-page">Гостиницы</a>
-              </li>
-            </ul>
-          </nav>
+              </a>
+            </li>
+            <li class="list-item-divider">
+              <img
+                src="images/navigation-list-divider.svg"
+                alt=""
+                class="divider-image"
+                width="6"
+                height="10"
+              />
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item-link current-page">Гостиницы</a>
+            </li>
+          </ul>
         </div>
         <form action="#" class="filters">
           <fieldset class="filter-properties">
@@ -144,7 +142,7 @@
               Апартаменты</label
             >
           </fieldset>
-          <div class="price-filter-properties">
+          <fieldset class="price-filter-properties">
             <label class="filter-subtitle">Стоимость, ₽:</label>
             <div class="price-inputs">
               <input
@@ -180,7 +178,7 @@
                 id="slider-right"
               />
             </div>
-          </div>
+          </fieldset>
           <div class="filter-buttons">
             <input
               type="submit"
@@ -192,7 +190,7 @@
         </form>
       </section>
       <section class="hotels-results">
-        <h2 class="visually-hidden">Отели</h2>
+        <h2 class="visually-hidden">Варианты отелей</h2>
         <div class="hotels-results-intro">
           <p class="filter-results">Найдено гостиниц: 38</p>
           <select name="price" id="price" class="price-filter-select">
@@ -200,11 +198,9 @@
             <option value="expensive">Сначала дорогие</option>
           </select>
           <div class="display-mode-buttons">
-            <button
-              class="display-button default-mode selected-button"
-            ></button>
-            <button class="display-button wide-mode"></button>
-            <button class="display-button list-mode"></button>
+            <a href="#" class="display-button default-mode selected-button"></a>
+            <a href="#" class="display-button wide-mode"></a>
+            <a href="#" class="display-button list-mode"></a>
           </div>
         </div>
         <ul class="hotels-list">
@@ -384,7 +380,7 @@
             </article>
           </li>
         </ul>
-        <ul class="page-button-list">
+        <ol class="pagination-list">
           <li class="list-item">
             <button class="button page-button current">1</button>
           </li>
@@ -403,9 +399,9 @@
           <li class="list-item">
             <button class="button page-button">10</button>
           </li>
-        </ul>
+        </ol>
       </section>
-      <div class="subscription">
+      <section class="subscription">
         <p class="section-subtitle">Подпишитесь на рассылку</p>
         <p class="section-description">
           Только полезная информация и никакого спама,<br />
@@ -415,7 +411,7 @@
           <input type="email" class="input-field" placeholder="Ваш e-mail" />
           <button class="button">Подписаться</button>
         </form>
-      </div>
+      </section>
     </main>
     <footer class="footer">
       <ul class="socials-list">
@@ -430,7 +426,9 @@
           /></a>
         </li>
         <li class="socials-list-item">
-          <a href="https://www.youtube.com/user/htmlacademyru" class="socials-link"
+          <a
+            href="https://www.youtube.com/user/htmlacademyru"
+            class="socials-link"
             ><img src="images/yt.svg" alt="Ютуб" class="socials-icon"
           /></a>
         </li>
@@ -439,7 +437,11 @@
         <a href="tel:+78128121212" class="address-link">+7 (812) 812-12-12</a>
       </address>
       <a href="https://htmlacademy.ru/" class="footer-logo">
-        <img src="images/HTMLAcademy.svg" alt="HTML Academy Логотип" class="footer-logo-image">
+        <img
+          src="images/HTMLAcademy.svg"
+          alt="HTML Academy Логотип"
+          class="footer-logo-image"
+        />
       </a>
     </footer>
   </body>
