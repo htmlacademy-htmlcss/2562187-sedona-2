@@ -295,7 +295,6 @@ body {
 
 .subscription {
   background: url(../images/subscribe.jpg);
-  background-position: center;
   background-size: cover;
   width: 1200px;
   min-height: 414px;
