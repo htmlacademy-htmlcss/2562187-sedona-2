@@ -729,10 +729,12 @@ input[type="range"]::-webkit-slider-runnable-track {
   width: 60px;
   height: 60px;
   font-size: 20px;
-  line-height: 179%;
+  line-height: 180%;
   text-transform: uppercase;
   text-align: center;
   background-color: #82b3d3;
+  display: block;
+  padding: 10px;
 }
 
 .current {
@@ -747,6 +749,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   font-size: 22px;
   line-height: 118%;
   text-align: center;
+  padding: 16px;
 }
 
 .main-catalog .subscription {
