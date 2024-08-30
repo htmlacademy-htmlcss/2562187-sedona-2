@@ -270,17 +270,12 @@ body {
 
 .advantages-more .card {
   align-items: center;
-  padding: 81px 85px;
+  padding: 80px 85px;
   row-gap: 31px;
 }
 
 .advantages-more .active-card {
   background-color: #FFF;
-}
-
-.card-image {
-  width: 75px;
-  height: 72px;
 }
 
 .interested {
