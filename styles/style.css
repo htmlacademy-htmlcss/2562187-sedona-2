@@ -248,6 +248,8 @@ body {
 
 .card-list {
   display: flex;
+  flex-wrap: wrap;
+  grid-column: 1/4;
 }
 
 .card-list .card {
