@@ -438,7 +438,7 @@ fieldset {
 
 .from {
   position: absolute;
-  left: 728px;
+  right: 807px;
 }
 
 .input-max-price {
@@ -447,7 +447,7 @@ fieldset {
 
 .to {
   position: absolute;
-  left: 869px;
+  right: 662px;
 }
 
 .price {
