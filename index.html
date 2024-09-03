@@ -4,16 +4,18 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="fonts/fonts.css" />
-    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    <div class="container">
     <header class="header">
-      <a href="https://htmlacademy.ru/" class="header-logo">
+      <a href="https://htmlacademy.ru/" class="logo">
         <img
           src="images/logo.svg"
           alt="Логотип Седоны"
-          class="header-logo-image"
+          class="logo-image"
+          width="140"
+          height="70"
         />
       </a>
       <nav class="navigation">
@@ -29,19 +31,23 @@
           </li>
         </ul>
       </nav>
-      <div class="header-buttons">
-        <a href="#" class="header-search">
+      <div class="buttons">
+        <a href="#" class="search">
           <img
             src="images/search.svg"
             alt="Поиск"
-            class="header-search-image"
+            class="search-image"
+            width="20"
+            height="20"
           />
         </a>
-        <a href="#" class="header-favorites">
+        <a href="#" class="favorites">
           <img
             src="images/fav.svg"
-            alt="Избранное"
-            class="header-favorites-image"
+            alt="Избранное и количество в избранном"
+            class="favorites-image"
+            width="44"
+            height="64"
           />
         </a>
         <button class="button">Хочу сюда!</button>
@@ -49,34 +55,28 @@
     </header>
     <main class="main">
       <section class="intro">
+        <h1 class="visually-hidden">Седона - Городок в Аризоне</h1>
         <div class="intro-images">
         <img
           src="images/intro-background.jpg"
-          alt="Красоты Седоны"
+          alt="Добро пожаловать в Седону"
           class="intro-bg-image"
-        />
-        <img
-          src="images/bg-overlay-title.svg"
-          alt="Седона приветствие"
-          class="intro-bg-overlay-title"
-        />
-        <img
-          src="images/intro-divider.svg"
-          alt=""
-          class="intro-bg-overlay-divider"
+          width="1200"
+          height="485"
         />
       </div>
       <div class="about">
-        <p class="section-subtitle">
+        <p class="subtitle">
           Седона — небольшой городок в Аризоне, <br />
           заслуживающий большего!
         </p>
-        <p class="section-description">
+        <p class="description">
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
       </div>
       </section>
       <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
         <div class="advantages-cards">
           <article class="card starting-card">
             <h3 class="card-title">Настоящий городок</h3>
@@ -89,6 +89,8 @@
             src="images/card-image-1.jpg"
             alt="Городок в Седоне"
             class="card-image-after"
+            width="800"
+            height="385"
           />
           <ul class="card-list">
             <li class="card-list-item">
@@ -123,6 +125,8 @@
             src="images/card-image-2.jpg"
             alt="Мост Дьявола"
             class="card-image-before"
+            width="800"
+            height="385"
           />
           <article class="card ending-card">
             <h3 class="card-title">
@@ -135,23 +139,26 @@
             </p>
           </article>
         </div>
-        <div class="section-ending-info">
-          <p class="section-subtitle">
+        <div class="ending-info">
+          <p class="subtitle">
             Приезжайте в Седону отдохнуть в комфорте и уюте!
           </p>
-          <p class="section-description">
+          <p class="description">
             Опытный персонал и качественное обслуживание!
           </p>
         </div>
       </section>
       <section class="advantages-more">
+        <h2 class="visually-hidden">Больше преимуществ</h2>
         <ul class="card-list">
           <li class="card-list-item">
             <article class="card">
               <img
                 src="images/card-housing.svg"
-                alt="Жильё"
+                alt="Иконка домика"
                 class="card-image"
+                width="75"
+                height="72"
               />
               <h3 class="card-title">Жильё</h3>
               <p class="card-description">
@@ -162,7 +169,12 @@
           </li>
           <li class="card-list-item">
             <article class="card active-card">
-              <img src="images/card-food.svg" alt="Еда" class="card-image" />
+              <img src="images/card-food.svg"
+              alt="Иконка бургера"
+              class="card-image"
+              width="75"
+              height="72"
+              />
               <h3 class="card-title">Еда</h3>
               <p class="card-description">
                 Всегда заказывайте <br />
@@ -174,8 +186,10 @@
             <article class="card">
               <img
                 src="images/card-souvenirs.svg"
-                alt="Сувениры"
+                alt="Иконка подарка"
                 class="card-image"
+                width="75"
+                height="72"
               />
               <h3 class="card-title">Сувениры</h3>
               <p class="card-description">
@@ -186,17 +200,17 @@
           </li>
         </ul>
         <div class="interested">
-          <p class="section-subtitle">Заинтересовались?</p>
-          <p class="section-description">
+          <p class="subtitle">Заинтересовались?</p>
+          <p class="description">
             Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
           <button class="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
         </div>
       </section>
-      <div class="subscription">
-        <p class="section-subtitle">Подпишитесь на рассылку</p>
-        <p class="section-description">
+      <section class="subscription">
+        <h2 class="subtitle">Подпишитесь на рассылку</h2>
+        <p class="description">
           Только полезная информация и никакого спама,<br />
           честное бойскаутское!
         </p>
@@ -204,32 +218,48 @@
           <input type="email" class="input-field" placeholder="Ваш e-mail" />
           <button class="button">Подписаться</button>
         </form>
-      </div>
+      </section>
     </main>
     <footer class="footer">
       <ul class="socials-list">
         <li class="socials-list-item">
           <a href="https://vk.com/htmlacademy" class="socials-link"
-            ><img src="images/vk.svg" alt="ВК" class="socials-icon"
+            ><img
+            src="images/vk.svg"
+            alt="ВК"
+            class="socials-icon"
+            width="24"
+            height="14"
           /></a>
         </li>
         <li class="socials-list-item">
           <a href="https://t.me/htmlacademy" class="socials-link"
-            ><img src="images/tg.svg" alt="Телеграм" class="socials-icon"
+            ><img
+            src="images/tg.svg"
+            alt="Телеграм"
+            class="socials-icon"
+            width="18"
+            height="15"
           /></a>
         </li>
         <li class="socials-list-item">
           <a href="https://www.youtube.com/user/htmlacademyru" class="socials-link"
-            ><img src="images/yt.svg" alt="Ютуб" class="socials-icon"
+            ><img
+            src="images/yt.svg"
+            alt="Ютуб"
+            class="socials-icon"
+            width="22"
+            height="17"
           /></a>
         </li>
       </ul>
       <address class="address">
         <a href="tel:+78128121212" class="address-link">+7 (812) 812-12-12</a>
       </address>
-      <a href="https://htmlacademy.ru/" class="footer-logo">
-        <img src="images/HTMLAcademy.svg" alt="HTML Academy Логотип" class="footer-logo-image">
+      <a href="https://htmlacademy.ru/" class="copyright-logo">
+        <img src="images/HTMLAcademy.svg" alt="HTML Academy Логотип" class="copyright-logo-image">
       </a>
     </footer>
+  </div>
   </body>
 </html>
