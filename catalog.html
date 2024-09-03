@@ -22,37 +22,43 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-list-item">
-            <a href="index.html" class="navigation-list-item-link">Главная</a>
+            <a href="index.html" class="item-link">Главная</a>
           </li>
           <li class="navigation-list-item">
-            <a href="#" class="navigation-list-item-link">О седоне</a>
+            <a href="#" class="item-link">О седоне</a>
           </li>
           <li class="navigation-list-item">
-            <a href="#" class="navigation-list-item-link active">Гостиницы</a>
+            <a href="#" class="item-link active">Гостиницы</a>
           </li>
         </ul>
       </nav>
-      <div class="buttons">
-        <a href="#" class="search">
-          <img
+      <ul class="buttons-list">
+        <li class="list-item">
+          <a href="#" class="search">
+            <img
             src="images/search.svg"
             alt="Поиск"
             class="search-image"
             width="20"
             height="20"
-          />
-        </a>
-        <a href="#" class="favorites">
-          <img
+            />
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="favorites">
+            <img
             src="images/fav.svg"
             alt="Избранное"
             class="favorites-image"
             width="44"
             height="64"
-          />
-        </a>
+            />
+          </a>
+        </li>
+        <li class="list-item">
         <button class="button">Хочу сюда!</button>
-      </div>
+      </li>
+      </ul>
     </header>
     <main class="main-catalog">
       <section class="hotels-filter">
@@ -203,11 +209,17 @@
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <div class="display-mode-buttons">
+          <ul class="display-mode-list">
+            <li class="list-item">
             <a href="#" class="display-button default-mode selected-button"></a>
+          </li>
+            <li class="list-item">
             <a href="#" class="display-button wide-mode"></a>
+          </li>
+            <li class="list-item">
             <a href="#" class="display-button list-mode"></a>
-          </div>
+          </li>
+          </ul>
         </div>
         <ul class="hotels-list">
           <li class="hotels-list-item">
